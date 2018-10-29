@@ -77,7 +77,7 @@ class Phpass
     end
 
     def force_encoding(s)
-      s.force_encoding('BINARY')
+      String.new(s).force_encoding('BINARY')
     end
   end
 end
